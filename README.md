@@ -25,7 +25,12 @@ docker run --rm -p 5000:5000 photo-gallery
 talk about security 
 
 ### Results and Evaluation
-add assets
+##### Sample output screenshots of website and Docker:
+<img src="assets/gallery.png" width="350" height="250">
+<img src="assets/upload_file.png" width="350" height="250">
+<img src="assets/homepage.png" width="350" height="250">
+<img src="assets/docker.png" width="350" height="250">
+
 talk about tests
 
 ### What's Next?
@@ -33,4 +38,5 @@ talk about tests
 
 ### Links
 ##### Github Repository: https://github.com/msm4eh/finalcasestudy
+
 
