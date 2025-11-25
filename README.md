@@ -26,10 +26,10 @@ talk about security
 
 ### Results and Evaluation
 ##### Sample output screenshots of website and Docker:
-<img src="assets/gallery.png" width="350" height="250">
-<img src="assets/upload_file.png" width="350" height="250">
-<img src="assets/homepage.png" width="350" height="250">
-<img src="assets/docker.png" width="350" height="250">
+<img src="assets/gallery.png" width="350" height="300">
+<img src="assets/upload_file.png" width="350" height="300">
+<img src="assets/homepage.png" width="350" height="300">
+<img src="assets/docker.png" width="350" height="300">
 
 talk about tests
 
@@ -38,5 +38,6 @@ talk about tests
 
 ### Links
 ##### Github Repository: https://github.com/msm4eh/finalcasestudy
+
 
 
