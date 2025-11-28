@@ -5,9 +5,9 @@
 
 ### System Overview
 ##### This project relates to the course concept of making a API with Flask. 
-add architecture png
-##### Users can upload PNG, JPG, JPEG, GIF which are then stored in static/uploads. 
-##### This project uses a MIT License
+![architecture PNG](assets/architecture.png)
+##### * Users can upload PNG, JPG, JPEG, GIF which are then stored in static/uploads. 
+##### * This project uses a MIT License
 
 ### How to Run
 ##### Docker
@@ -34,10 +34,11 @@ docker run --rm -p 5000:5000 photo-gallery
 ##### Upload validation prevents unsupported file types. 
 
 ### What's Next?
-##### If I were to continue to develop this project, I would focus on making it more complex and making it look more aesthetically pleasing. For example, I would make it a gallery for a certain theme of photo, rather than any photo in general. I would tailor the color palette of the website to match the purpose of the gallery. Also, I add a feature that creates photo albums so that the photos in the gallery are better organized. 
+##### If I were to continue to develop this project, I would focus on making it more complex/multiuser and making it more aesthetically pleasing. Instead of a general photo gallery, I would select a theme for my website, such as sport photos or cooking photos. Then, I would select a color palette that matches the theme. Finally, I would add albums so similar photos can be grouped in the gallery.
 
 ### Links
 ##### Github Repository: https://github.com/msm4eh/finalcasestudy
+
 
 
 
