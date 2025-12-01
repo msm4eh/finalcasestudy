@@ -2,7 +2,11 @@ import os
 from flask import Flask, render_template, request, redirect, url_for
 
 # configure app to use src/static as static folder and src/templates for templates
-app = Flask(__name__, template_folder="templates", static_folder="static")
+app = Flask(
+    __name__,
+    template_folder="src/templates",
+    static_folder="src/static"
+)
 
 UPLOAD_FOLDER = os.path.join(app.static_folder, "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
