@@ -2,11 +2,7 @@ import os
 from flask import Flask, render_template, request, redirect, url_for
 
 # configure app to use src/static as static folder and src/templates for templates
-app = Flask(
-    __name__,
-    template_folder="src/templates",
-    static_folder="src/static"
-)
+app = Flask(__name__, template_folder="templates", static_folder="static")
 
 UPLOAD_FOLDER = os.path.join(app.static_folder, "uploads")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -38,21 +34,13 @@ def upload_file():
 
 @app.route("/gallery")
 def gallery():
-    allowed_ext = {"png", "jpg", "jpeg", "gif"}
-
+    # list files in uploads folder
     try:
-        files = sorted(os.listdir(app.config["UPLOAD_FOLDER"]))
+        images = sorted(os.listdir(app.config["UPLOAD_FOLDER"]))
     except FileNotFoundError:
-        files = []
-
-    # Only keep real image files
-    images = [
-        f"/static/uploads/{f}"
-        for f in files
-        if "." in f and f.rsplit(".", 1)[1].lower() in allowed_ext
-    ]
-
-    return render_template("gallery.html", images=images)
+        images = []
+    image_urls = [f"/static/uploads/{img}" for img in images]
+    return render_template("gallery.html", images=image_urls)
 
 
 if __name__ == "__main__":
