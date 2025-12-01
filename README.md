@@ -26,7 +26,7 @@ docker run --rm -p 5000:5000 photo-gallery
 
 ### Results and Evaluation
 ##### Sample output screenshots of website and Docker:
-<img src="assets/gallery.png" width="350" height="300">
+<img src="assets/gallery2.png" width="350" height="300">
 <img src="assets/upload_file.png" width="350" height="300">
 <img src="assets/homepage.png" width="350" height="300">
 <img src="assets/docker.png" width="350" height="300">
@@ -38,6 +38,7 @@ docker run --rm -p 5000:5000 photo-gallery
 
 ### Links
 ##### Github Repository: https://github.com/msm4eh/finalcasestudy
+
 
 
 
