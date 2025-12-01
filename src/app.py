@@ -34,13 +34,22 @@ def upload_file():
 
 @app.route("/gallery")
 def gallery():
-    # list files in uploads folder
+    allowed_ext = {"png", "jpg", "jpeg", "gif"}
+
     try:
-        images = sorted(os.listdir(app.config["UPLOAD_FOLDER"]))
+        files = sorted(os.listdir(app.config["UPLOAD_FOLDER"]))
     except FileNotFoundError:
-        images = []
-    image_urls = [f"/static/uploads/{img}" for img in images]
-    return render_template("gallery.html", images=image_urls)
+        files = []
+
+    # Only keep real image files
+    images = [
+        f"/static/uploads/{f}"
+        for f in files
+        if "." in f and f.rsplit(".", 1)[1].lower() in allowed_ext
+    ]
+
+    return render_template("gallery.html", images=images)
+
 
 if __name__ == "__main__":
     # for local development only; Docker will run the same command
